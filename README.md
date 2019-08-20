@@ -17,11 +17,8 @@ A K-Nearest Neighbors classifier achieved a 45% prediction accuracy.  Trials wit
 
 Flattening the groupings into 3 equal size classes rather than 4 would likely improve the overall accuracy of the model.
 
-The features that correlated most correlated (postively and negatively) with high school graduation rates appear to mirror longstanding social, economic, and racial disparities.  Burdensome housing costs relative to income had the most significant correlation, and unsurprisingly had a very negative affect on graduation rates.  This may be a better predictor for economic disadvantages than median income or even the percentage of children in poverty - while there is one federal poverty line, costs of living vary drastically from state to state and city to city.  A person living in New York City whose income above the poverty line is likely be poorer relative to someone making an equal salary in a lower cost of living city like Columbus Ohio.  
+The features that correlated most (postively and negatively) with high school graduation rates appear to mirror longstanding social, economic, and racial disparities.  Burdensome housing costs relative to income had the most significant correlation, and unsurprisingly had a very negative affect on graduation rates.  This may be a better predictor for economic disadvantages than median income or even the percentage of children in poverty - while there is one federal poverty line, costs of living vary drastically from state to state and city to city.  A person living in New York City whose income above the poverty line is likely be poorer relative to someone making an equal income in a lower cost of living city like Columbus Ohio.  
 
-
-
-.  Graduation rates correlated positively with higher percentages of non-hispanic whites (this may be a proxy for degree of segregation in a given area) and negatively for communities with higher percentages of native americans african americans.  Burdensome housing costs relative to income also had moderate correlation with school success.
 ![Features that correlate highly with HS grad rates](/images/correlations.jpg)
 
 
