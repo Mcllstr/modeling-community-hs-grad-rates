@@ -1,17 +1,15 @@
-## UNDER CONSTRUCTION
-# Predicting high school graduation rates
+# Modeling high school graduation rates
 
 ### Contributors
 - Joe McAllister
 - Tim Christy
 
 ### Abstract
-
-Using Data from countyrankings.org we created multiple models to predicts high school performance based on an array of county-wide social economic data.  This analysis highlights other factors that appear to correlate with graduation rates and have heavy weights in the models.  
+Using Data from countyrankings.org we created multiple models to predict high school performance based on an array of county-wide social economic data.  This analysis highlights other factors that appear to correlate with graduation rates and have heavy weights in the models.  
 
 Graduation rates were binned based on quartiles and treated as multiclass classifier targets.  The upper quartile, median, and lower graduation rate quartiles were 93%, 89%, and 84%.  
 
-A K-Nearest Neighbors classifier achieved a 45% prediction accuracy.  Trials with SVMs, logistic regression, random forests, and boosted forest methods yielded similar results.  While the overall accuracy is low, this is a significant improvement over the baseline random chance guess accuracy of 25%.  A quick examination of the confusion matrix below demonstrates that the model is good at accuratley predicting extremes above the upper quartile of 93% and below the lower quartile of 84%, but struggles when it comes to correct classifications between the upper and lower quartiles.  
+A K-Nearest Neighbors classifier achieved a 45% prediction accuracy.  Trials with SVMs, logistic regression, random forests, and boosted forest methods yielded similar results.  While the overall accuracy is low, this is a significant improvement over the baseline random chance guess accuracy of 25%.  A quick examination of the confusion matrix below demonstrates that the model is good at accurately predicting extremes in the upper quartile above 93% and in the lower quartile below 84%, but struggles when it comes to correct classifications between the upper and lower quartiles.  
 
 ![Multiclass KNN Confusion Matrix](/images/knn_conf_matrix.jpg)
 
