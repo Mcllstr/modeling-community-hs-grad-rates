@@ -5,7 +5,7 @@
 - Tim Christy
 
 ### Overview
-We created multiple models to predict high school performance based on 64 county-wide socio-economic variables extracted from countyrankings.org county health database.  This analysis highlights other factors that  that appear to correlate with graduation rates and have heavy weights in the models.  
+We created multiple models to predict high school performance based on 500+ county-wide socio-economic variables extracted from countyrankings.org county health database.  These were widdled down to 64 variables, and these were used to model graduation rates and highlight other factors that  that appear to correlate with graduation rates and have significant influence in the models.  
 
 Graduation rates were binned based on quartiles and treated as multiclass classifier targets.  The upper quartile, median, and lower graduation rate quartiles were 93%, 89%, and 84%.  
 
