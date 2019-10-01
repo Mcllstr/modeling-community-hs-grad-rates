@@ -23,9 +23,18 @@ We can see this further reflected in the plot below.  This chart shows the relat
 
 ![Logistic Classifier Feature Importances](/images/feature_importance_logistic_classifier_heat_cirlces.jpg)
 
+Looking at the most important features for the two extreme quartiles we can see some interesting relationships.  The strongest predictor for the lowest graduation rate quartile were variables linked to access to healthcare (poor physical health, injury deaths), poverty (children eligible for meal assistance, burdensome housing costs), and race (higher % Native Americans).  While a higher percentage native americans signal increased odds for underperforming schools, higher percentages of white people in a county signal reduced odds of having lower graduation rates.  This is a stark reminder of the stark socio-economic disadvantages native communities continue endure and their effects on the next generation.  
+
+![Lower Quartile Feature Importances](/images/lowest_quartile_feature_importance.jpg)
+
+ Frequent physical Distress is (at least in this model) the heaviest 
+
+![Upper Quartile Feature Importances](/images/highest_quartile_feature_importance.jpg)
+
 The features that correlated most (postively and negatively) with high school graduation rates appear to mirror longstanding social, economic, and racial disparities.  Burdensome housing costs relative to income had the most significant correlation, and unsurprisingly had a very negative affect on graduation rates.  This may be a better predictor for economic disadvantages than median income or even the percentage of children in poverty - while there is one federal poverty line, costs of living vary drastically from state to state and city to city.  A person living in New York City whose income above the poverty line is likely be poorer relative to someone making an equal income in a lower cost of living city like Columbus Ohio.  
 
 ![Features that correlate highly with HS grad rates](/images/correlations.JPG)
+
 
 
 ### Files
