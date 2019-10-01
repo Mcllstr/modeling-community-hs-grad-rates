@@ -35,8 +35,9 @@ Somewhat surprisingly frequent physical distress is (at least in this model) the
 Our ensemble classifier achieved 49% percent accuracy in predicting county high school graduation rates quartiles, a gain over baseline random chance of 25%.  In the course of the modeling it was noted that many of the variables were heavily left or right skewed to different degrees, the model accuracy might be improved in the future by applying custom normalization functions to each of the 64 variables.  The influence of features on the model seem to mirror longstanding social, economic, and racial disparities, with whiteness and higher incomes tending to indicate higher odds of highest graduation rate class membership, and poverty and non-whiteness (and in particular native american communities) indicating higher odds of lowest graduation rate class membership.  These are a stark reminder that the playing field is not level for all kids in America.
 
 ### Files
-- technical_workbook.ipynb
-- slides.pdf
+- /images - folder for images generated in notebook
+- /data - folder for raw data downloaded from countyrankings.org
 - README.md
-- /images
-- /data
+- Technical_workbook.ipynb
+- clean_data.pickle - cleaned data for modeling
+- models.pickle - pickle file contains all trained models from technical notebook
