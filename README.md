@@ -5,7 +5,7 @@
 - Tim Christy
 
 ### Overview
-We created multiple models to predict high school performance based on an array of county-wide socio-economic data.  This analysis highlights other factors that This analysis highlights other factors that appear to correlate with graduation rates and have heavy weights in the models.  
+We created multiple models to predict high school performance based on 64 county-wide socio-economic variables extracted from countyrankings.org county health database.  This analysis highlights other factors that  that appear to correlate with graduation rates and have heavy weights in the models.  
 
 Graduation rates were binned based on quartiles and treated as multiclass classifier targets.  The upper quartile, median, and lower graduation rate quartiles were 93%, 89%, and 84%.  
 
@@ -31,6 +31,8 @@ Somewhat surprisingly frequent physical distress is (at least in this model) the
 
 ![Upper Quartile Feature Importances](/images/highest_quartile_feature_importance.jpg)
 
+### Conclusions
+Our ensemble classifier achieved 49% percent accuracy in predicting county high school graduation rates quartiles, a gain over baseline random chance of 25%.  In the course of the modeling it was noted that many of the variables were heavily left or right skewed to different degrees, the model accuracy might be improved in the future by applying custom normalization functions to each of the 64 variables.  The influence of features on the model seem to mirror longstanding social, economic, and racial disparities, with whiteness and higher incomes tending to indicate higher odds of highest graduation rate class membership, and poverty and non-whiteness (and in particular native american communities) indicating higher odds of lowest graduation rate class membership.  These are a stark reminder that the playing field is not level for all kids in America.
 
 ### Files
 - technical_workbook.ipynb
