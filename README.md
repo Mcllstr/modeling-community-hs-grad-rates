@@ -4,7 +4,7 @@
 - Joe McAllister
 - Tim Christy
 
-### Abstract
+### Overview
 We created multiple models to predict high school performance based on an array of county-wide socio-economic data.  This analysis highlights other factors that This analysis highlights other factors that appear to correlate with graduation rates and have heavy weights in the models.  
 
 Graduation rates were binned based on quartiles and treated as multiclass classifier targets.  The upper quartile, median, and lower graduation rate quartiles were 93%, 89%, and 84%.  
@@ -23,18 +23,13 @@ We can see this further reflected in the plot below.  This chart shows the relat
 
 ![Logistic Classifier Feature Importances](/images/feature_importance_logistic_classifier_heat_cirlces.jpg)
 
-Looking at the most important features for the two extreme quartiles we can see some interesting relationships.  The strongest predictor for the lowest graduation rate quartile were variables linked to access to healthcare (poor physical health, injury deaths), poverty (children eligible for meal assistance, burdensome housing costs), and race (higher % Native Americans).  While a higher percentage native americans signal increased odds for underperforming schools, higher percentages of white people in a county signal reduced odds of having lower graduation rates.  This is a stark reminder of the stark socio-economic disadvantages native communities continue endure and their effects on the next generation.  
+The features that signaled most (postively and negatively) odds that a community has the highest or lowest graduation rates appear to mirror longstanding social, economic, and racial disparities.  The strongest predictor for the lowest graduation rate quartile were variables linked to access to healthcare (poor physical health, injury deaths), poverty (children eligible for meal assistance, burdensome housing costs), and race (higher % Native Americans).  While a higher percentage native americans signal increased odds for lower graduation rates, higher percentages of white people in a county signal reduced odds of having low graduation rates.  This is a stark reminder that native american communities face socio-economic disadvantages that whiter communities do not, and these diferences continue to harm future generations.  
 
 ![Lower Quartile Feature Importances](/images/lowest_quartile_feature_importance.jpg)
 
- Frequent physical Distress is (at least in this model) the heaviest 
+Somewhat surprisingly frequent physical distress is (at least in this model) the most the most significant contributor to odds of high graduation rate counties.  More investigation is needed to understand if this is a real relationship or some quirk of the data.  Percent hispanic, percent white population, and higher household incomes highly influence odds that a county fits into top graduation rate quartile.  Percent of single parent homes, higher incidence of mental illnesses, and unemployment reduce odds of high quartile graduation rates.  
 
 ![Upper Quartile Feature Importances](/images/highest_quartile_feature_importance.jpg)
-
-The features that correlated most (postively and negatively) with high school graduation rates appear to mirror longstanding social, economic, and racial disparities.  Burdensome housing costs relative to income had the most significant correlation, and unsurprisingly had a very negative affect on graduation rates.  This may be a better predictor for economic disadvantages than median income or even the percentage of children in poverty - while there is one federal poverty line, costs of living vary drastically from state to state and city to city.  A person living in New York City whose income above the poverty line is likely be poorer relative to someone making an equal income in a lower cost of living city like Columbus Ohio.  
-
-![Features that correlate highly with HS grad rates](/images/correlations.JPG)
-
 
 
 ### Files
